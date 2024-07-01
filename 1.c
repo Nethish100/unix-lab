@@ -21,13 +21,7 @@ int main() {
  } else {
  perror("gethostname");
  }
- // Retrieve current working directory
-1.Write a C/C++ POSIX compliant program to check the following limits:
-(i) No. of clock ticks
-(ii) Max. no. of child processes
-(iii) Max. path length
-(iv) Max. no. of characters in a file name
-USP LAB MANUAL
+ 
  if (getcwd(cwd, sizeof(cwd)) != NULL) {
  printf("Current working directory: %s\n", cwd);
  } else {
